@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// variables -----------------------------------
+
+
+$acc-darker: rgb(107, 93, 69);
+$acc: rgb(181, 152, 103);
+$acc-lighter: rgb(234, 220, 197);
+$acc-light: rgb(196, 173, 132);
+$semi-transp: rgba(0, 0, 0, 0.6);
+$transp: rgba(0, 0, 0, 0);
+
+
+// side structure, nav -------------------------
+
+header {
+  width: 100%;
+  border-bottom: 2px ridge $acc;
+  background-color: $semi-transp;
+  padding: 0.5rem;
+  margin-bottom: 10%;
+}
+
+body {
+  background-color: #0a0e0d;
+  line-height: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+ul#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+
+  .invisible {
+    cursor: pointer;
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    background-color: $transp;
+    color: $acc-ligh;
+    border: none;
+    &:hover {
+      color: $acc-darker;
+    }
+  }
+}
+
+
+
+// images -------------------------
+
+img {
+  width: 100%;
+}
+
+.characterImg {
+  max-width: 450px;
+  margin: 1rem;
+  border-bottom: 2px solid $acc;
+}
+
+
+// text -------------------------
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  font-family: "Bellefair", serif;
+  color: $acc-lighter;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+p {
+  max-width: 430px;
+  color: $acc-light;
+}
+
+.text {
+  flex-grow: 1;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+// buttons -------------------------
+.btn {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  background-color: $semi-transp;
+  color: $acc-light;
+  padding: 0.5rem 1rem;
+  border: 1px ridge $acc;
+  border-radius: 0.3rem;
+}
+
+.btn.start {
+  margin-bottom: 3rem;
+  padding: 1rem 1.5rem;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+}
+
+// wrappers  -------------------------
+.wrapper {
+  height: 100vh;
+  background-position: bottom;
+  border-right: 2px ridge $acc;
+  border-left: 2px ridge $acc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentwrapper {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px ridge rgb(181, 152, 103);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem;
+  margin-bottom: 10%;
+}
+
+body {
+  background-color: #0a0e0d;
+  line-height: 1.3rem;
+  font-family: "Oswald", sans-serif;
+  font-weight: 300;
+}
+
+ul#nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+ul#nav .invisible {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(196, 173, 132);
+  border: none;
+}
+ul#nav .invisible:hover {
+  color: rgb(107, 93, 69);
+}
+
+img {
+  width: 450px;
+}
+
+.characterImg {
+  border-bottom: 2px solid rgb(181, 152, 103);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Playfair Display", serif;
+  font-family: "Bellefair", serif;
+  color: rgb(234, 220, 197);
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  max-width: 430px;
+  color: rgb(196, 173, 132);
+}
+
+.text {
+  flex-grow: 1;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+.btn {
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(196, 173, 132);
+  padding: 0.5rem 1rem;
+  border: 1px ridge rgb(181, 152, 103);
+  border-radius: 0.3rem;
+}
+
+.btn.start {
+  margin-bottom: 3rem;
+  padding: 1rem 1.5rem;
+}
+.btn.start:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.wrapper {
+  height: 100vh;
+  background-image: url(assets/cityalt.png);
+  background-position: bottom;
+  border-right: 2px ridge rgb(181, 152, 103);
+  border-left: 2px ridge rgb(181, 152, 103);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contentwrapper {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*# sourceMappingURL=style.css.map */
