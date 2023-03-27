@@ -11,6 +11,8 @@ let mayaBtn = document.getElementById("mayaBtn")
 let scoreBtn = document.getElementById("scoreBtn")
 
 
+let startBtn = ""
+
 
 
 
@@ -48,9 +50,11 @@ mayaBtn.addEventListener("click", () => {
   clear(contentwrapper);
   wrapper.style.backgroundImage = "none"
   contentwrapper.innerHTML = `<img class="characterImg" src="assets/fullbody.png" alt="character, woman with brown hair, light from behind">
+  <div class="text-left">
   <p class="charDesc">Armed with her wits, athleticism, and advanced 
   technology, she embarks on a thrilling adventure to uncover the truth behind the 
-  mysterious forces at play. </p>`
+  mysterious forces at play. </p>
+  </div>`
   writeText(cont, document.querySelector(".charDesc"))
 })
 
@@ -75,14 +79,21 @@ function loadPage() {
   wrapper.style.backgroundImage = "url(assets/cityalt.png)"
   contentwrapper.innerHTML = `
     <h1>MAYA</h1>
-    <div class="text">
+    <div class="text-center">
       <p class="gameDesc">In the year 2057, </p>
     </div>
     <button class="btn start">Start Game</button>
   `;
   writeText(textPromt, document.querySelector(".gameDesc"));
-  let StartBtn = document.querySelector(".start");
+  startBtn = document.querySelector(".start");
+
+  startBtn.addEventListener("click", () => {
+    clear(contentwrapper);
+    contentwrapper.innerHTML = `<p>Comming soon</p>`
+  })
 }
+
+
 
 homeBtn.addEventListener("click", () => {
   loadPage()

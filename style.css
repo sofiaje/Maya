@@ -38,10 +38,12 @@ ul#nav .invisible:hover {
 }
 
 img {
-  width: 450px;
+  width: 100%;
 }
 
 .characterImg {
+  max-width: 450px;
+  margin-right: 1rem;
   border-bottom: 2px solid rgb(181, 152, 103);
 }
 
@@ -64,10 +66,14 @@ p {
   color: rgb(196, 173, 132);
 }
 
-.text {
+.text-center {
   flex-grow: 1;
-  padding: 0.5rem;
   text-align: center;
+  padding: 0.5rem;
+}
+
+.text-left {
+  padding: 0.5rem;
 }
 
 .btn {
@@ -90,10 +96,7 @@ p {
 
 .wrapper {
   height: 100vh;
-  background-image: url(assets/cityalt.png);
   background-position: bottom;
-  border-right: 2px ridge rgb(181, 152, 103);
-  border-left: 2px ridge rgb(181, 152, 103);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
